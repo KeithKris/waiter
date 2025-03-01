@@ -1,0 +1,5 @@
+ollama==0.4.4
+python-dotenv==1.0.0
+pyttsx3
+faster_whisper
+cython<3.0
