@@ -1,5 +1,8 @@
 import pyttsx3
-engine = pyttsx3.init() # object creation
+#engine = pyttsx3.init() # object creation
+engine = pyttsx3.init("espeak")
+voices = engine.getProperty('voices')
+engine.setProperty('voice',voices[11].id) #English
 
 class locutus():
     def vocalize(self,message):

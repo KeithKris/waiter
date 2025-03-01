@@ -1,4 +1,3 @@
-README.md
 pyproject.toml
 llama_python.egg-info/PKG-INFO
 llama_python.egg-info/SOURCES.txt
@@ -12,3 +11,4 @@ src/main.py
 src/schema.py
 src/sr.py
 src/tts.py
+src/voices.py

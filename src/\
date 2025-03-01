@@ -49,7 +49,8 @@ def main():
         speak.vocalize(result['say'])
         pass
     else:
-        if len(result['item_number']) == 0:
+        print (len(result['item_number']))
+        if not len(result['item_number']) == 0:
             print ("invalid order")
             messages.append({"role": "system", "content": "The previous response was invalid. item_number cannot be null when order_complete is false. There is enough information to complete the order in this prompt. Complete it correctly. Use the say parameter in this response to talk to the user"})
             response = chat.get_response(messages)
